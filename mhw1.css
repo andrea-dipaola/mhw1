@@ -1,0 +1,160 @@
+
+header #text{
+    max-width: 780px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    z-index: 1;
+}
+
+header{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://gdsit.cdn-immedia.net/2015/01/Pizza-J.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#overlay{
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#links {    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a{
+    color: white;
+    background-color: tomato;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+article #profile{
+    z-index: 1;
+    margin-top: -50px;
+    text-align: center;
+}
+
+#profile p{
+    margin: 0;
+    font-size: 20px ;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+article img{
+    height: 100px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;       
+}
+
+section h1{
+    width: 66.67%;
+    margin: 0;
+    font-size: 40px;
+}
+
+h1 p{
+    margin: 0;
+    color: tomato;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+h1 div{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+h1 img{
+    margin-top: 20px;
+    height: 400px;
+    margin-bottom: 120px;
+    width: 50%;
+}
+
+#num{
+    z-index: 1;
+    margin-left: -80px;
+    margin-right: 40px;
+    color: gray;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: tomato;
+}
+
+footer p{
+    color: white;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+}
+
+#menu{
+    display: none;
+}
+
+#menu div{
+    width: 25px;
+    height: 3px;
+    background-color: tomato;
+    margin: 5px 0;
+}
+
+@media (max-width: 500px) {
+    #links{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    h1 img{
+        width: 100%;
+    }
+}
+
+
+
+
